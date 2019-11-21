@@ -61,7 +61,9 @@ const (
 )
 
 func (tst Test) Test(t *testing.T) {
-	t.Parallel() // Call after parsing so we don't goof the scanner.
+	/*
+		t.Parallel() // Call after parsing so we don't goof the scanner.
+	*/
 	s := open(string(tst))
 	for s.Next() {
 		t.Run(string(tst), func(t *testing.T) {
