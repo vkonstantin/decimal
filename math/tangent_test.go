@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ericlagergren/decimal"
+	"github.com/vkonstantin/decimal"
 )
 
 func TestTan(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ericlagergren/decimal"
+	"github.com/vkonstantin/decimal"
 )
 
 func TestAsin(t *testing.T) {

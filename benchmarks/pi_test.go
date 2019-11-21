@@ -6,7 +6,7 @@ import (
 
 	"github.com/apmckinlay/gsuneido/util/dnum"
 	"github.com/cockroachdb/apd"
-	"github.com/ericlagergren/decimal"
+	"github.com/vkonstantin/decimal"
 	ssdec "github.com/shopspring/decimal"
 	"gopkg.in/inf.v0"
 )
@@ -25,10 +25,10 @@ func TestPiBenchmarks(t *testing.T) {
 		name string
 		fn   testFunc
 	}{
-		{"ericlagergren/decimal (Go)", func(prec int) string {
+		{"vkonstantin/decimal (Go)", func(prec int) string {
 			return PiDecimal_Go(prec).String()
 		}},
-		{"ericlagergren/decimal (GDA)", func(prec int) string {
+		{"vkonstantin/decimal (GDA)", func(prec int) string {
 			return PiDecimal_GDA(prec).String()
 		}},
 		{"cockroachdb/apd", func(prec int) string {
@@ -73,8 +73,8 @@ func BenchmarkPi(b *testing.B) {
 		pkg string
 		fn  func(prec int)
 	}{
-		{"ericlagergren (Go)", benchmarkPi_decimal_Go},
-		{"ericlagergren (GDA)", benchmarkPi_decimal_GDA},
+		{"vkonstantin (Go)", benchmarkPi_decimal_Go},
+		{"vkonstantin (GDA)", benchmarkPi_decimal_GDA},
 		{"cockroachdb/apd", benchmarkPi_apd},
 		{"shopspring", benchmarkPi_shopspring},
 		{"apmckinlay", benchmarkPi_dnum},

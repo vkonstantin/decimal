@@ -5,7 +5,7 @@ import (
 
 	"github.com/apmckinlay/gsuneido/util/dnum"
 	"github.com/cockroachdb/apd"
-	"github.com/ericlagergren/decimal"
+	"github.com/vkonstantin/decimal"
 	ssdec "github.com/shopspring/decimal"
 	"gopkg.in/inf.v0"
 )
@@ -143,7 +143,7 @@ var (
 )
 
 // PiDecimal_Go calculates π to the desired precision using
-// github.com/ericlagergren/decimal with the operating mode set to Go.
+// github.com/vkonstantin/decimal with the operating mode set to Go.
 func PiDecimal_Go(prec int) *decimal.Big {
 	var (
 		ctx = decimal.Context{
@@ -177,7 +177,7 @@ func PiDecimal_Go(prec int) *decimal.Big {
 }
 
 // PiDecimal_GDA calculates π to the desired precision using
-// github.com/ericlagergren/decimal with the operating mode set to GDA.
+// github.com/vkonstantin/decimal with the operating mode set to GDA.
 func PiDecimal_GDA(prec int) *decimal.Big {
 	var (
 		ctx = decimal.Context{

@@ -3,7 +3,7 @@ package decimal_test
 import (
 	"fmt"
 
-	"github.com/ericlagergren/decimal"
+	"github.com/vkonstantin/decimal"
 )
 
 func ExampleBig_Format() {

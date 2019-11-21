@@ -57,7 +57,7 @@
 //
 // Further information and references can be found at the links below.
 //
-//    [1]: github.com/ericlagergren/decimal
+//    [1]: github.com/vkonstantin/decimal
 //    [2]: github.com/cockroachdb/apd
 //    [3]: github.com/apmckinlay/gsuneido/util/dnum
 //    [4]: docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html

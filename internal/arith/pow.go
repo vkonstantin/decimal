@@ -5,7 +5,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ericlagergren/decimal/internal/c"
+	"github.com/vkonstantin/decimal/internal/c"
 )
 
 const (
