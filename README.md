@@ -41,4 +41,12 @@ the [General Decimal Arithmetic](http://speleotrove.com/decimal/) specification.
 
 ## License
 
-[BSD 3-clause](https://github.com/ericlagergren/decimal/blob/master/LICENSE)
+[BSD 3-clause](https://github.com/ericlagergren/decimal/blob/master/LICENSE
+
+## Run it before tests
+
+`
+ln -s ../testdata ./math/testdata
+ln -s ../testdata ./misc/testdata
+go test -short ./...
+`

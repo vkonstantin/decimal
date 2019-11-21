@@ -32,7 +32,7 @@ tags
 *.test
 *.out
 *.zip
-*.gz
+# *.gz
 
 # Internal
 literature/
@@ -55,4 +55,4 @@ internal/nat/
 
 # Testing
 x.bash
-*.decTest
+# *.decTest
