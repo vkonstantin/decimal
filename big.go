@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ericlagergren/decimal/internal/arith"
-	"github.com/ericlagergren/decimal/internal/c"
+	"github.com/vkonstantin/decimal/internal/arith"
+	"github.com/vkonstantin/decimal/internal/c"
 )
 
 // Big is a floating-point, arbitrary-precision decimal.
@@ -1192,7 +1192,7 @@ func (z *Big) SetFloat64(x float64) *Big {
 		z.exp = -shift
 	} else {
 		// TODO(eric): figure out why this doesn't work for _some_ numbers. See
-		// https://github.com/ericlagergren/decimal/issues/89
+		// https://github.com/vkonstantin/decimal/issues/89
 		//
 		// z.compact = mantissa << uint(-shift)
 		// z.precision = arith.Length(z.compact)

@@ -4,9 +4,9 @@ import (
 	stdMath "math"
 	"math/bits"
 
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/internal/arith"
-	"github.com/ericlagergren/decimal/misc"
+	"github.com/vkonstantin/decimal"
+	"github.com/vkonstantin/decimal/internal/arith"
+	"github.com/vkonstantin/decimal/misc"
 )
 
 const maxInt = 1<<(bits.UintSize-1) - 1 // Also: uint64(int(^uint(0) << 1))

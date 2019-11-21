@@ -1,4 +1,4 @@
-# decimal [![Build Status](https://travis-ci.org/ericlagergren/decimal.png?branch=master)](https://travis-ci.org/ericlagergren/decimal) [![GoDoc](https://godoc.org/github.com/ericlagergren/decimal?status.svg)](https://godoc.org/github.com/ericlagergren/decimal)
+# decimal [![Build Status](https://travis-ci.org/ericlagergren/decimal.png?branch=master)](https://travis-ci.org/ericlagergren/decimal) [![GoDoc](https://godoc.org/github.com/vkonstantin/decimal?status.svg)](https://godoc.org/github.com/vkonstantin/decimal)
 
 `decimal` implements arbitrary precision, decimal floating-point numbers, per 
 the [General Decimal Arithmetic](http://speleotrove.com/decimal/) specification.
@@ -27,11 +27,11 @@ the [General Decimal Arithmetic](http://speleotrove.com/decimal/) specification.
 
 ## Installation
 
-`go get github.com/ericlagergren/decimal`
+`go get github.com/vkonstantin/decimal`
 
 ## Documentation
 
-[GoDoc](http://godoc.org/github.com/ericlagergren/decimal)
+[GoDoc](http://godoc.org/github.com/vkonstantin/decimal)
 
 ## Versioning
 
@@ -41,4 +41,12 @@ the [General Decimal Arithmetic](http://speleotrove.com/decimal/) specification.
 
 ## License
 
-[BSD 3-clause](https://github.com/ericlagergren/decimal/blob/master/LICENSE)
+[BSD 3-clause](https://github.com/vkonstantin/decimal/blob/master/LICENSE
+
+## Run it before tests
+
+`
+ln -s ../testdata ./math/testdata
+ln -s ../testdata ./misc/testdata
+go test -short ./...
+`

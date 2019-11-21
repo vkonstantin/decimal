@@ -4,9 +4,9 @@ package misc
 import (
 	"math/big"
 
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/internal/arith"
-	"github.com/ericlagergren/decimal/internal/c"
+	"github.com/vkonstantin/decimal"
+	"github.com/vkonstantin/decimal/internal/arith"
+	"github.com/vkonstantin/decimal/internal/c"
 )
 
 var (

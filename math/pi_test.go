@@ -2,7 +2,7 @@ package math
 
 import (
 	"fmt"
-	"github.com/ericlagergren/decimal"
+	"github.com/vkonstantin/decimal"
 	"strconv"
 	"testing"
 )

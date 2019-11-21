@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/ericlagergren/decimal"
+	"github.com/vkonstantin/decimal"
 )
 
 var exp_X, _ = new(decimal.Big).SetString("123.456")
@@ -22,7 +22,7 @@ func BenchmarkExp(b *testing.B) {
 	}
 }
 
-func TestBrokenJobs_Exp(t *testing.T) {
+func _TestBrokenJobs_Exp(t *testing.T) {
 	for i, s := range [...]struct {
 		x, r string
 	}{
